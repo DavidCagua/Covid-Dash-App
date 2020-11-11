@@ -1,3 +1,4 @@
+#encoding: utf-8
 import dash
 import dash_core_components as dcc
 import dash_html_components as html
@@ -20,7 +21,7 @@ data = pd.read_excel(DATA_PATH.joinpath("Datos_Comorbilidades1.xlsx"), header=0,
 options=[{'label':'Colombia','value':'Colombia'}]
 cities=data.Ciudad.unique()
 cities.sort()
-encoding: utf-8
+
 for city in cities:
     dic={'label':city,'value':city}
     options.append(dic)
